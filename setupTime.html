@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Planifica tu viaje</title>
+    <link rel="icon" href=favicon.png sizes="16x16" type="image/png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleChart.css">
+    <link rel="stylesheet" href="css/styleScreen.css">
+
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+
+    <link rel="" media="" href="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js">
+
+  </head>
+  <body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header headerUInav">
+                <a class="navbar-brand" href="#">
+                  <img alt="Brand" src="images/logo.svg">
+                </a>
+                <ul class="nav navbar-nav">
+                    <li>
+                      <a href="#">
+                        <img alt="Notificación" src="images/iconBell.svg">
+                      </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      <div class="overlay"></div>
+  
+      <!-- Sidebar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+          <ul class="nav sidebar-nav">
+              <li class="sidebar-brand userLink">
+                  <a href="#">
+                     <img src="images/circleUser.svg" alt="User">
+                      Nombre de usuario
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="images/iconCalendarColor.svg" alt="Calendar">
+                      Programa tu viaje
+                    </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="images/iconVanColor.svg" alt="Mis Viajes">
+                      Mis viajes programados
+                    </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="images/iconBellColor.svg" alt="Notificación">
+                      Alertas
+                    </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="images/iconUserColor.svg" alt="¿Cómo funciona?">
+                      ¿Cómo funciona?
+                    </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="images/iconMapColor.svg" alt="Información">
+                      Información de autopistas
+                    </a>
+              </li>
+          </ul>
+      </nav>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper" class="contentSecondInner">
+          <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+              <span class="hamb-top"></span>
+              <span class="hamb-middle"></span>
+              <span class="hamb-bottom"></span>
+          </button>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <h2 class="titleInnerPage titleInnerPageTwo">Considere inscribir su viaje bajo la línea de congestión proyectada.</h2> 
+                      <div class="wrapperPagaContent">
+                        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+                        <main>
+                            <h5>Viernes 12 de Octubre 2018 / Ruta 78
+                                    De Santiago a Valparaíso</h5>
+                            <div id="bar-chart"></div>
+                        </main>
+                        <div class="container">
+                                <div class="row">
+                                    <div class=''>
+                                        <div class="form-group">
+                                            <div class='input-group date' id='datetimepicker3'>
+                                                <input type='text' class="form-control" placeholder="Seleccione su horario para usar autopista"/>
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-time"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        <div class="boxButtonsAling">
+                            <button type="button" class="btn btn-default btnC">Volver</button>
+                            <button type="button" class="btn btn-default btnA btnADos">Registrar vijae</button>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#datetimepicker3').datetimepicker({
+                format: 'LT'
+            });
+        });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Planifica tu viaje</title>
+    <link rel="icon" href=favicon.png sizes="16x16" type="image/png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleScreen.css">
+
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+
+  </head>
+  <body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header headerUInav">
+                <a class="navbar-brand" href="#">
+                  <img alt="Brand" src="images/logo.svg">
+                </a>
+                <ul class="nav navbar-nav">
+                    <li>
+                      <a href="#">
+                        <img alt="Notificación" src="images/iconBell.svg">
+                      </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      <div class="overlay"></div>
+  
+      <!-- Sidebar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+          <ul class="nav sidebar-nav">
+              <li class="sidebar-brand userLink">
+                  <a href="#">
+                     <img src="images/circleUser.svg" alt="User">
+                      Nombre de usuario
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="images/iconCalendarColor.svg" alt="Calendar">
+                      Programa tu viaje
+                    </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="images/iconVanColor.svg" alt="Mis Viajes">
+                      Mis viajes programados
+                    </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="images/iconBellColor.svg" alt="Notificación">
+                      Alertas
+                    </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="images/iconUserColor.svg" alt="¿Cómo funciona?">
+                      ¿Cómo funciona?
+                    </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <img src="images/iconMapColor.svg" alt="Información">
+                      Información de autopistas
+                    </a>
+              </li>
+          </ul>
+      </nav>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+          <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+              <span class="hamb-top"></span>
+        <span class="hamb-middle"></span>
+      <span class="hamb-bottom"></span>
+          </button>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                      <div class="shapeDecorationA"></div>                  
+                      <div class="boxHome">
+                          <img src="images/iconCarretera.svg" alt="Carretera">
+                          <div class="cardTextA">
+                            <h6>Congestión en autopistas</h6>
+                            <h2>Problema de muchos, a solucionar entre todos</h2>
+                          </div>
+                          <div class="btn-group-vertical" role="group" aria-label="...">
+                              <button type="button" class="btn btn-default btnA">Programa tu viaje</button>
+                              <button type="button" class="btn btn-default btnB">¿Cómo funciona?</button>
+                              <button type="button" class="btn btn-default btnC">Información de autopistas</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
